@@ -1,0 +1,11 @@
+.navbarButton {
+    margin-left: 10px;
+    font-size: 1.5em;
+    padding: .5em;
+    border-radius: 7px;
+}
+
+.active {
+    background-color: var(--textSoft);
+    color: white;
+}
