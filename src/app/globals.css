@@ -32,9 +32,11 @@ body {
 .container {
   width: 1536px;
   margin: auto;
+  /* margin at the top to "move" all content below the fixed
+  navbar */
+  margin-top: 150px; 
   padding-left: 50px;
   padding-right: 50px;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
