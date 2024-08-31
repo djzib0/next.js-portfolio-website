@@ -1,13 +1,15 @@
 import { projects } from "@/lib/data"
 import Link from "next/link"
+import ProjectDashboardItem from "./projectDashboardItem/ProjectDashboardItem"
+import styles from "./projectsDashboard.module.css"
 
 const ProjectsDashboard = () => {
   return (
-    <div>
+    <div className={styles.container}>
       {projects.map((project) => (
         <div className="test" key={project.id}>
           <Link href={`/projects/${project.id}`}>
-            {project.title}
+            <ProjectDashboardItem title={project.title} />
           </Link>
         </div>
       ))}

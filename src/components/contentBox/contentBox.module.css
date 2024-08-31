@@ -1,0 +1,68 @@
+.container {
+    --border-size: 4px;
+    --border-color: #9acd32;
+    --b-radius: 1em;
+}
+
+.container {
+    position: relative;
+}
+
+.header {
+    border: var(--border-size) solid var(--border-color);
+    border-bottom: none;
+    border-top-left-radius: var(--b-radius);
+    border-top-right-radius: var(--b-radius);
+    background-color: white;
+    width: fit-content;
+    margin-bottom: -2px;
+    position: relative;
+    z-index: -100;
+    padding: .5em;
+    font-size: 1.2em;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* cover "connection" between header and content container */
+.cover {
+    border-bottom: none;
+    background-color: white;
+    color: white;
+    width: fit-content;
+    margin: var(--border-size);
+    position: absolute;
+    top: 30px;
+    z-index: 100;
+    padding: .5em;
+    font-size: 1.2em;
+    line-height: 5px;
+    height: 5px;
+    overflow: hidden;
+}
+
+.wrapper {
+    /* bg color must be the same as a border color in the header */
+    /* padding simulates border */
+    background-color: var(--border-color);
+    border-bottom-left-radius: var(--b-radius);
+    border-bottom-right-radius: var(--b-radius);
+    padding: var(--border-size);
+    position: absolute;
+    z-index: -100;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    padding: .5em;
+    border-bottom-left-radius: var(--b-radius);
+    border-bottom-right-radius: var(--b-radius);
+}
+
+.content {  
+  
+}
+
+.header,
+.content {
+    background-color: #ffffff;
+}
