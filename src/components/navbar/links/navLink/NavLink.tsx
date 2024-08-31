@@ -10,9 +10,6 @@ const NavLink = ({item} : {item: LinkObject}) => {
 
   const pathname = usePathname();
 
-  console.log(pathname)
-  console.log(item.path === pathname)
-
   return (
     <Link 
       href={item.path} 

@@ -20,8 +20,11 @@ const ProjectPage = () => {
           className={styles.imgContainer}
           />
       </div>
-      This is a project with id {project?.desc}
+      <div className={styles.desc}>
+        {project?.desc}
       </div>
+      <div className={styles.url}>{project?.gitLink}</div>
+    </div>
   )
 }
 

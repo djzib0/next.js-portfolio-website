@@ -1,0 +1,20 @@
+{
+    "folder-color.pathColors": [
+        {
+            "folderPath": "next.js-portfolio-website\\src\\app\\components\\",
+            "color": "foldercolorizer.GreenYellow"
+        },
+        {
+            "folderPath": "next.js-portfolio-website\\src\\app\\",
+            "color": "foldercolorizer.LightSkyBlue"
+        },
+        {
+            "folderPath": "next.js-portfolio-website\\src\\components\\",
+            "color": "foldercolorizer.GreenYellow"
+        },
+        {
+            "folderPath": "next.js-portfolio-website\\src\\lib\\",
+            "color": "foldercolorizer.yellow"
+        }
+    ]
+}

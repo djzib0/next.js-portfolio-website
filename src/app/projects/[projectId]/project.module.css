@@ -12,3 +12,9 @@
     width: 100px;
     height: 100px;
 }
+
+@media (max-width: 475px) {
+    .container {
+        display: flex;
+    }
+}

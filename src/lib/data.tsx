@@ -1,4 +1,4 @@
-import {ProjectType} from "./types"
+import {LinkObject, ProjectType} from "./types"
 
 export const projects: ProjectType[] = [
     {
@@ -19,5 +19,16 @@ export const projects: ProjectType[] = [
         gitLink: "link to github",
         url: "http://www.google.com",
     },
-
 ]
+
+
+export const links: LinkObject[] = [
+    {
+      title: "home",
+      path: "/"
+    },
+    {
+      title: "projects",
+      path: "/projects"
+    },
+  ]

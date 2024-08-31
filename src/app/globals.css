@@ -1,12 +1,12 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
-@layer base {
+/* @layer base {
   body {
     @apply bg-black
   }
-}
+} */
 
 :root {
   --bg: #0d0c22;
@@ -30,13 +30,13 @@ body {
 }
 
 .container {
-  width: 1536px;
+  max-width: 1536px;
   margin: auto;
   /* margin at the top to "move" all content below the fixed
   navbar */
   margin-top: 150px; 
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -47,7 +47,7 @@ a {
   color: inherit;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .container {
       width: 640px;
     }
@@ -63,6 +63,6 @@ a {
   
 @media (max-width: 475px) {
     .container {
-      width: 380px;
+      width: 300px;
     }
-}
+} */

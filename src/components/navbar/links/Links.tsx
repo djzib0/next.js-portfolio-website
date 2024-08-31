@@ -1,19 +1,9 @@
 import { LinkObject } from "@/lib/types"
 import Link from "next/link";
 import NavLink from "./navLink/NavLink";
+import { links } from "@/lib/data";
 
 const Links = () => {
-
-  const links: LinkObject[] = [
-    {
-      title: "home",
-      path: "/"
-    },
-    {
-      title: "projects",
-      path: "/projects"
-    },
-  ]
 
   return (
     <div>
