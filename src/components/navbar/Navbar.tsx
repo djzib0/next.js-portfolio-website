@@ -4,13 +4,18 @@ import Links from "./links/Links";
 import Image from "next/image";
 import { useState } from "react";
 import { links } from "@/lib/data";
-import { link } from "fs";
 import NavLink from "./links/navLink/NavLink";
 
 
 const Navbar = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const closeNavbar = () => {
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  }
 
   return (
     <div className={styles.container}>
@@ -50,7 +55,11 @@ const Navbar = () => {
       {isMenuOpen &&
         <div className={styles.linksNarrow}>
           {links.map((link) => (
-            <NavLink item={link} key={link.path + link.title}/>
+            <NavLink 
+              item={link} 
+              key={link.path + link.title}
+              handleFunc={closeNavbar}
+            />
           ))}
         </div>
       }

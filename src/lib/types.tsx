@@ -6,9 +6,16 @@ export type LinkObject = {
 export type ProjectType = {
     id: number;
     title: string;
-    desc: string;
+    desc: string[];
     img: string;
-    tech: string[]; //TODO: change to enum?
+    tech: TechStack[];
     gitLink: string; 
     url: string;
+}
+
+export enum TechStack {
+    JavaScript = "JavaScript",
+    HTML = "HTML",
+    CSS = "CSS",
+    React = "React",
 }

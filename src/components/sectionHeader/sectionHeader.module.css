@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.header {
+    /* text-align: center; */
+    color: var(--textDarker);
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    border-bottom: 5px solid var(--colorOrange);
+}

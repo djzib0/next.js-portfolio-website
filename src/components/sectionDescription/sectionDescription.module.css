@@ -1,0 +1,5 @@
+.container {
+    margin-bottom: 3em;
+    color: var(--textDark);
+    text-align: justify;
+}
