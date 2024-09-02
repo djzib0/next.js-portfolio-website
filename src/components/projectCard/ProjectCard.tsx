@@ -1,7 +1,6 @@
 import styles from "./projectCard.module.css";
 import Image from "next/image";
 import { ProjectType } from "@/lib/types";
-import Button from "../button/Button";
 import Link from "next/link";
 
 
@@ -18,17 +17,21 @@ const ProjectCard = ({project} : {project: ProjectType}) => {
           layout="responsive"
         />
       </div>
-      <h3 className={styles.title}>
-        {project.title}
-      </h3>
-      {project.desc.map((item) => (
-        <p key={"id" + item} className={styles.desc}>
-          {item}
-        </p>
-      ))}
-          <Link href={`/projects/${project.id}`} className={styles.button}>
-            SHOW MORE
-          </Link>
+      <div className={styles.details}>
+        <h3 className={styles.title}>
+          {project.title}
+        </h3>
+        <div>
+          {project.desc.map((item) => (
+            <p key={"id" + item} className={styles.desc}>
+              {item}
+            </p>
+        ))}
+        </div>
+        <Link href={`/projects/${project.id}`} className={styles.button}>
+          SHOW MORE
+        </Link>
+      </div>
     </div>
   )
 }

@@ -6,11 +6,16 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
-    margin-bottom: 2em;
-    background-color: transparent;
+    margin-bottom: 4em;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .title {
@@ -49,6 +54,34 @@
     border: none;
     border-radius: 5px;
     margin-top: 2em;
-    margin-bottom: 5em;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        gap: 40px;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+
+    .imageContainer,
+    .details {
+        flex: 1;
+    }
+
+    .details {
+        justify-content: space-evenly;
+    }
+
+    .button {
+        margin-bottom: 5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        margin-bottom: 1em;
+        gap: 60px;
+    }
 }

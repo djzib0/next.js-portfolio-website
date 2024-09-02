@@ -12,6 +12,7 @@
   --bg: #0d0c22;
   --bgSoft: #2d2b42;
   --text: #89b0ae;
+  --textWhite: #ffffff;
   --textSoft: #bee3db;
   --textDark: #595959;
   --textDarker: #3b3b3b;
@@ -28,20 +29,18 @@
 }
 
 body {
-  background-color: var(--bg);
-  background-image: url("../../public/bgmod.png");
+  background-color: whitesmoke;
+  /* background-image: url("../../public/bgmod.png"); */
   background-attachment: fixed;
   color: var(--text);
 }
 
 .container {
-  max-width: 1536px;
-  margin: auto;
+  max-width: 1024px;
+  margin: 0 auto;
   /* margin at the top to "move" all content below the fixed
   navbar */
   margin-top: 90px; 
-  margin-left: 10px;
-  margin-right: 10px;
   padding-left: 18px;
   padding-right: 18px;
   display: flex;

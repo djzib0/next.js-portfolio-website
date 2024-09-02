@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: .5em;
+    color: var(--textWhite);
+    background-image: url("/micro_carbon.png");
+}
+
+.socials {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header {
+    font-weight: 900;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+}
+
+.message {
+    font-size: .9em;
+    margin-bottom: 1em;
+}
+
+.icons {
+    /* margin: .5em auto; */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon {
+    margin: 0 .2em;
+}
+
+.copyrightNotice {
+    margin: 1em auto;
+    font-size: .8em;
+}
+
+.name { 
+    /* text-decoration: underline; */
+    color: var(--colorOrange)
+}
