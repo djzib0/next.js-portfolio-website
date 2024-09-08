@@ -1,6 +1,8 @@
 .descriptionContainer {
     padding: 0 var(--horPadding);
     margin-bottom: 4em;
+    max-width: 1024px;
+    margin: 0 auto 4em auto;
 }
 
 .header {

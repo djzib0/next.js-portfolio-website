@@ -1,8 +1,9 @@
 .projectLinksContainer {
     padding: 0 var(--horPadding);
-    margin-bottom: 4em;
+    margin: 0 auto 4em auto;
     display: flex;
     flex-direction: column;
+    max-width: 1024px;
 }
 
 .header {
@@ -21,9 +22,10 @@
     justify-content: center;
     background-color: var(--colorOrange);
     padding: 12px 24px;
-    max-width: 300px;
     font-weight: 700;
     border-radius: .3em;
+    width: 100%;
+    border: 2px solid transparent;
 }
 
 .linkButtonLeft {
@@ -48,7 +50,6 @@
     align-items: center;
     justify-content: center;
     padding: 12px 24px;
-    max-width: 300px;
     font-weight: 700;
     border-radius: .3em;
     text-transform: uppercase;
@@ -57,12 +58,16 @@
 @media (min-width: 476px) {
     .links {
         display: grid;
+        justify-content: center;
+        max-width: 610px;
+        gap: 10px;
         grid-template-columns: 1fr 1fr;
     }
 
-    .linkButton {
+    .linkButton,
+    .goBackButton {
         width: 100%;
-        max-width: 100%;
+        max-width: 300px;
         flex: 1;
     }
 }

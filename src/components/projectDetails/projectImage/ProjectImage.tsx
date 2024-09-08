@@ -3,15 +3,17 @@ import styles from "./projectImage.module.css"
 
 const ProjectImage = ({imgUrl} : {imgUrl: string}) => {
   return (
-    <div className={styles.imageContainer}>
-      <Image
-        src={"/testimg.jpg"}
-        alt=""
-        objectFit="cover"
-        width={220}
-        height={198}
-        layout="responsive"
-      />
+    <div className={styles.container}>
+      <div className={styles.imageContainer}>
+        <Image
+          src={"/testimg.jpg"}
+          alt=""
+          objectFit="cover"
+          width={270}
+          height={198}
+          layout="responsive"
+          />
+      </div>
     </div>
   )
 }
