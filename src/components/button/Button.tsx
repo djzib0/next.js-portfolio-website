@@ -1,13 +1,14 @@
+import Link from "next/link"
 import styles from "./button.module.css"
 
-const Button = ({children} : {children: any}) => {
+const Button = ({title, url} : {title: string, url: string}) => {
   return (
-    <button 
-      type="button"
+    <Link 
+      href={url}
       className={styles.button}
       >
-      {children}
-    </button>
+      {title}
+    </Link>
   )
 }
 

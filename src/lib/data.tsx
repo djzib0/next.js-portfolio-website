@@ -32,7 +32,15 @@ export const links: LinkObject[] = [
       path: "/"
     },
     {
+      title: "about",
+      path: "/about"
+    },
+    {
       title: "projects",
       path: "/projects"
+    },
+    {
+      title: "contact",
+      path: "/contact"
     },
   ]
