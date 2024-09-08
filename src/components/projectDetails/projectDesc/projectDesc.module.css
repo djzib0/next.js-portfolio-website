@@ -1,0 +1,14 @@
+.descriptionContainer {
+    padding: 0 var(--horPadding);
+    margin-bottom: 4em;
+}
+
+.header {
+    margin-bottom: 1.2em;
+}
+
+.paragraph {
+    text-align: left;
+    margin-bottom: 1em;
+    line-height: 1.7;
+}

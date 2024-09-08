@@ -18,8 +18,10 @@
   --textDarker: #3b3b3b;
   --textLighter: #e9d985;
   --colorOrange: #ff930a;
+  --colorOrangeLight: #ffb95c;
   --btn: #3673fd;
-  --bgImg:
+  /* --bgImg: */
+  --horPadding: 18px;
 }
 
 * {
@@ -32,7 +34,7 @@ body {
   background-color: whitesmoke;
   /* background-image: url("../../public/bgmod.png"); */
   background-attachment: fixed;
-  color: var(--text);
+  color: var(--textDarker);
 }
 
 .container {
@@ -41,8 +43,8 @@ body {
   /* margin at the top to "move" all content below the fixed
   navbar */
   margin-top: 90px; 
-  padding-left: 18px;
-  padding-right: 18px;
+  /* padding-left: 18px;
+  padding-right: 18px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

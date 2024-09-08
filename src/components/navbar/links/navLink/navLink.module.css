@@ -1,11 +1,21 @@
 .navbarButton {
-    margin-left: 10px;
+    padding: 0em .5em;
+    margin-bottom: .5em;
     font-size: 1.5em;
-    padding: .5em;
-    border-radius: 7px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--textDarker);
 }
 
 .active {
-    background-color: var(--text);
-    color: white;
+    border-bottom: 2px solid var(--colorOrange);
+}
+
+@media (min-width: 476px) {
+    .navbarButton {
+        padding: .2em;
+        margin-left: 10px;
+        margin-bottom: 0;
+        font-size: 1em;
+    }
 }

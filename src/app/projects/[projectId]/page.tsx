@@ -4,6 +4,7 @@ import { useParams } from "next/navigation"
 import styles from "./project.module.css"
 import Image from "next/image";
 import SectionHeader from "@/components/sectionHeader/SectionHeader";
+import ProjectDetails from "@/components/projectDetails/ProjectDetails";
 
 const ProjectPage = () => {
 
@@ -13,7 +14,8 @@ const ProjectPage = () => {
 
   return (
     <div className={styles.container}>
-      {project && <SectionHeader title={project.title}/>}
+      {project && <ProjectDetails project={project} />}
+      {/* {project && <SectionHeader title={project.title}/>}
       <div className={styles.content}>
         <div className={styles.imageContainer}>
           <Image
@@ -37,7 +39,7 @@ const ProjectPage = () => {
           ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

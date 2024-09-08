@@ -1,0 +1,36 @@
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: var(--textDarker);
+    background-image: url("/fabric.png");
+    padding: 5em 0;
+    margin-top: -1em;
+}
+
+
+.title {
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+}
+
+.description {
+    text-align: justify;
+    padding: 0 var(--horPadding)
+}
+
+@media (min-width: 476px) {
+    .headerContainer {
+        padding: 8em 0;
+    }
+
+    .description {
+        line-height: 2em;
+        font-size: 1.2em;
+    }
+}

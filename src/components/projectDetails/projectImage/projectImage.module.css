@@ -1,0 +1,4 @@
+.imageContainer {
+    padding: 0 var(--horPadding);
+    margin: 5em 0;
+}

@@ -6,7 +6,7 @@ import { LinkObject } from "@/lib/types";
 import "./navLink.module.css"
 import styles from "./navLink.module.css"
 
-const NavLink = ({item, handleFunc} : {item: LinkObject, handleFunc: () => void}) => {
+const NavLink = ({item, handleFunc} : {item: LinkObject, handleFunc?: () => void}) => {
 
   const pathname = usePathname();
 

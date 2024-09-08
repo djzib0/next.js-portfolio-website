@@ -5,13 +5,13 @@ export const projects: ProjectType[] = [
         id: 1,
         title: "CRM app",
         desc: [
-          "This is a simple CRM app where you can add new tasks...",
-          "This is a second paragraph",
-          "And this is another one"
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quae error molestias dignissimos doloribus, possimus labore quas nemo unde omnis?",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sit nisi animi, reprehenderit dolorem eius maxime minus, ab libero harum, voluptas veritatis laudantium saepe consequatur?",
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod nesciunt excepturi vitae labore atque.",
         ],
         img: "/testimg.jpg",
         tech: [TechStack.HTML, TechStack.CSS, TechStack.JavaScript, TechStack.React],
-        gitLink: "link to github",
+        gitLink: "https://www.google.com",
         url: "",
     },
     {

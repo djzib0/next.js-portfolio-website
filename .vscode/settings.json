@@ -15,6 +15,10 @@
         {
             "folderPath": "next.js-portfolio-website\\src\\lib\\",
             "color": "foldercolorizer.yellow"
+        },
+        {
+            "folderPath": "next.js-portfolio-website\\src\\components\\projectDetails\\",
+            "color": "foldercolorizer.GrayishSilver"
         }
     ]
 }

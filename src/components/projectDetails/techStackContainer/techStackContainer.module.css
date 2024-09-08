@@ -1,0 +1,22 @@
+.techStackContainer {
+    padding: 0 var(--horPadding);
+    margin-bottom: 4em;
+}
+
+.header {
+    margin-bottom: 1.2em;
+}
+
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stackItem {
+    padding: 8px 16px;
+    background-color: var(--colorOrangeLight);
+    border-radius: .2em;
+    font-weight: bold;
+    color: var(--fontDark);
+}

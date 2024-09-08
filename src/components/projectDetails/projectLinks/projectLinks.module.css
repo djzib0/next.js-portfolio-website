@@ -1,0 +1,68 @@
+.projectLinksContainer {
+    padding: 0 var(--horPadding);
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-bottom: 1.2em;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.linkButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorOrange);
+    padding: 12px 24px;
+    max-width: 300px;
+    font-weight: 700;
+    border-radius: .3em;
+}
+
+.linkButtonLeft {
+    padding: 0;
+    margin: 0;
+    margin-bottom: -5px;
+    font-size: 1.2em;
+}
+
+.linkButtonRight {
+    background-color: var(--colorOrange);
+    padding: 0;
+    margin: 0;
+    margin-left: .5em;
+}
+
+.goBackButton {
+    border: 2px solid var(--colorOrange);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    max-width: 300px;
+    font-weight: 700;
+    border-radius: .3em;
+    text-transform: uppercase;
+}
+
+@media (min-width: 476px) {
+    .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .linkButton {
+        width: 100%;
+        max-width: 100%;
+        flex: 1;
+    }
+}
