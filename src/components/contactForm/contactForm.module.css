@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 var(--horPadding); */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    margin-bottom: 4em;
+}
+
+.formContainer > input {
+    height: 40px;
+}
+
+.formContainer > textarea {
+    height: 200px;
+}
+
+.formContainer > input,
+.formContainer > textarea {
+    padding: .5em;
+    border: 2px solid var(--colorOrange);
+    border-radius: .5em;
+    box-sizing: border-box;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formContainer > button {
+    width: 100%;
+    background-color: var(--colorOrangeLight);
+    color: var(--textDarker);
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .5em;
+}
+
+
+
