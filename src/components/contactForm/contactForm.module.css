@@ -1,15 +1,70 @@
 .container {
     display: flex;
     flex-direction: column;
-    /* padding: 0 var(--horPadding); */
+    padding: 0 var(--horPadding);
+    max-width: 1024px;
+    gap: 2em;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 2em;
+    line-height: 1.5em;
+    letter-spacing: 1px;
 }
 
+.message {
+    font-size: 1.1em;
+}
+
+.message > p {
+    margin-bottom: 1em;
+}
+
+.message > p > span {
+    color: var(--textDarker);
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: underline;
+    text-decoration-color: var(--colorOrange);
+    text-decoration-thickness: 2px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.socialContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactInformation > p {
+    margin-bottom: 1em;
+}
+
+.socialTitle {
+    font-weight: bolder;
+    font-size: 1.4em;
+    height: fit-content;
+    margin-bottom: 1em;
+    color: var(--colorOrange);
+}
+
+.socialIcon {
+    font-size: 3em;
+    color: #e36414;
+    
+}
+
+.formHeader {
+    margin: 0;
+}
 
 .formContainer {
     display: flex;
@@ -48,6 +103,11 @@
     padding: 1em 2em;
     border: none;
     border-radius: .5em;
+}
+
+.formContainer > .label {
+    font-size: small;
+    margin-top: -1em;
 }
 
 
