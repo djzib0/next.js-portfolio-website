@@ -1,6 +1,9 @@
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     padding: 0 var(--horPadding);
     max-width: 1024px;
     gap: 2em;
@@ -9,7 +12,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     gap: 2em;
     line-height: 1.5em;
     letter-spacing: 1px;
@@ -66,7 +69,7 @@
     margin: 0;
 }
 
-.formContainer {
+.form {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -74,16 +77,16 @@
     margin-bottom: 4em;
 }
 
-.formContainer > input {
+.form > input {
     height: 40px;
 }
 
-.formContainer > textarea {
+.form > textarea {
     height: 200px;
 }
 
-.formContainer > input,
-.formContainer > textarea {
+.form > input,
+.form > textarea {
     padding: .5em;
     border: 2px solid var(--colorOrange);
     border-radius: .5em;
@@ -94,7 +97,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.formContainer > button {
+.form > button {
     width: 100%;
     background-color: var(--colorOrangeLight);
     color: var(--textDarker);
@@ -105,9 +108,56 @@
     border-radius: .5em;
 }
 
-.formContainer > .label {
+.messageDashboard {
+    display: flex;
+    gap: 1em;
+}
+
+.form > .label {
     font-size: small;
     margin-top: -1em;
+}
+
+.iconButton {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    color: var(--textDarker)
+}
+
+@media (min-width: 476px) {
+    .content {
+        font-size: 1.2em;
+    }
+
+    .message {
+        margin-bottom: 3em;
+    }
+
+    .socials {
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        gap: 7em;
+        height: calc(100vh - 250px); /* 250px is a height of navbar */
+    }
+    
+    .content {
+        flex-direction: row;
+        gap: 4em;
+    }
+
+    .contactInformation > p {
+        margin-bottom: 2em;
+    }
+
+    .contactInformation,
+    .formContainer {
+        flex: 1;
+    }
 }
 
 
