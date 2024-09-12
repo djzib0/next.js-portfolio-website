@@ -10,7 +10,7 @@
     align-items: center;
     margin: 0 auto 0 auto;
     padding: 5em 0;
-    height: calc(100vh - 120px);
+    /* height: calc(100vh - 120px); */
 }
 
 .header {
@@ -34,6 +34,7 @@
 @media (min-width: 476px) {
     .content {
         padding: 10em 0;
+        height: calc(100vh - 250px); 
     }
 
     .header {
@@ -44,6 +45,8 @@
 @media (min-width: 768px) {
     .content {
         padding: 19em 0;
+        height: calc(100vh - 250px); 
+        /* 250px is a height of a footer */
     }
 
     .header {

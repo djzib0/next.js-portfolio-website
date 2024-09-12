@@ -57,6 +57,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 6em;
+        height: calc(100vh - 250px); 
     }
 
     .desc {
