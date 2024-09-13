@@ -23,6 +23,24 @@ export const projects: ProjectType[] = [
         gitLink: "link to github",
         url: "http://www.google.com",
     },
+    {
+        id: 2,
+        title: "Recipair app",
+        desc: ["Create your own shoplists based on chosen recipes"],
+        img: "/testimg.jpg",
+        tech: [TechStack.HTML, TechStack.CSS, TechStack.JavaScript, TechStack.React],
+        gitLink: "link to github",
+        url: "http://www.google.com",
+    },
+    {
+        id: 2,
+        title: "Recipair app",
+        desc: ["Create your own shoplists based on chosen recipes"],
+        img: "/testimg.jpg",
+        tech: [TechStack.HTML, TechStack.CSS, TechStack.JavaScript, TechStack.React],
+        gitLink: "link to github",
+        url: "http://www.google.com",
+    },
 ]
 
 

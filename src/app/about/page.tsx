@@ -2,6 +2,7 @@ import SectionHeader from "@/components/sectionHeader/SectionHeader";
 import styles from "./about.module.css";
 import SectionDescription from "@/components/sectionDescription/SectionDescription";
 import Button from "@/components/button/Button";
+import Footer from "@/components/footer/Footer";
 
 const AboutPage = () => {
   return (
@@ -30,7 +31,7 @@ const AboutPage = () => {
             <div>CSS</div>
             <div>JavaScript</div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
   )
